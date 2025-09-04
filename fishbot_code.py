@@ -51,14 +51,14 @@ class PlayerScore:
 
 # ----------- Manual Execution ----------- #
 
-player = PlayerScore("SwoleChimp")
+player = PlayerScore("USERNAME")
 
 # Load collection log and dictionary
-collection_log = player.load_json("collectionlog-SwoleChimp.json")
+collection_log = player.load_json("collectionlog-USERNAME.json")
 collection_dict = player.load_json("coll_log_dictionary.json")
 
 # Load combat data (optional but expected to have {"points": ...})
-combat_data = player.load_json("SwoleChimp_combat.json")
+combat_data = player.load_json("USERNAME_combat.json")
 
 # Score collection log
 if collection_log and collection_dict:
